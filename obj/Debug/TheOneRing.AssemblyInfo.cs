@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Touzi.TheOneRing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d72b87595954f9764706e3ab97b24cf2a32c51d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Touzi.TheOneRing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Touzi.TheOneRing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
