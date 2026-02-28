@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>OneRingWhisper</defName>
+    <label>魔戒的低语</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <category>Misc</category>
+    <baseChance>0.15</baseChance>
+    <minRefireDays>10</minRefireDays>
+    <workerClass>Touzi.TheOneRing.IncidentWorker_OneRingWhisper</workerClass>
+    <letterLabel>魔戒的低语</letterLabel>
+    <letterText>一个声音在{0}的耳畔轻声呼唤——"它是你的，它一直是属于你的..."至尊魔戒的诱惑无人可以抗拒...</letterText>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>OneRingRuinsDiscovery</defName>
+    <label>至尊魔戒的遗迹</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <category>GiveQuest</category>
+    <baseChance>1</baseChance>
+    <minRefireDays>60</minRefireDays>
+    <workerClass>IncidentWorker_GiveQuest</workerClass>
+    <questScriptDef>OneRingRuinsQuest</questScriptDef>
+    <requireColonistsPresent>true</requireColonistsPresent>
+  </IncidentDef>
+</Defs>

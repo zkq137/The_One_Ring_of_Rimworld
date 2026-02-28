@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AAibhqvBmXg=",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\The_One_Ring_of_Rimworld\\TheOneRing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zkq73\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4518\\krafs.rimworld.ref.1.6.4518.nupkg.sha512",
+    "C:\\Users\\zkq73\\.nuget\\packages\\lib.harmony\\2.3.6\\lib.harmony.2.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}

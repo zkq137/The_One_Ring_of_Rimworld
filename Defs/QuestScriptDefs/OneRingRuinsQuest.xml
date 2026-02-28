@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>OneRingRuinsQuest</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <isRootSpecial>true</isRootSpecial>
+    <rootMinPoints>300</rootMinPoints>
+    <defaultChallengeRating>2</defaultChallengeRating>
+    <autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->至尊魔戒的遗迹</li>
+        <li>questName->远古之戒</li>
+        <li>questName->失落的至尊戒</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->你在阅读古籍时发现了一个关于至尊魔戒的传说...\n\n据说这枚蕴含着无上力量的魔戒被古代先民埋藏在这片土地的深处，等待着新的主人。\n\n任务奖励：至尊魔戒</li>
+        <li>questDescriptionPartBeforeDiscovery->古老的传说暗示着这片土地的某处埋藏着无上的力量...</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="Touzi.TheOneRing.QuestNode_Root_OneRingRuins" />
+  </QuestScriptDef>
+</Defs>

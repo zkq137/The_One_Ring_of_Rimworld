@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 
+    至尊魔戒定义
+    使用ThingWithComps作为父类，避免继承ApparelBase中的品质组件
+    -->
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <!-- 唯一标识符，用于代码中引用 -->
+        <defName>OneRing</defName>
+        
+        <!-- 显示名称 -->
+        <label>至尊魔戒</label>
+        
+        <!-- 物品描述 -->
+        <description>刻有古老文字的金色戒指。\n传说中，这枚戒指由黑暗魔君索伦在末日火山的火焰中铸造，灌注了他大部分的力量与恶意。\n它能令佩戴者隐形于凡人眼中，却使其在戒灵的视野中如灯塔般明亮。\n它能延长寿命，却以腐蚀灵魂为代价。\n它能赋予力量，却要求绝对的服从。\n\n火光照耀下，文字闪烁发光：\n"One Ring to rule them all, \nOne Ring to find them, \nOne Ring to bring them all and in the darkness bind them."</description>
+        
+        <!-- ========== 基本属性 ========== -->
+        
+        <!-- 物品类别：服装 -->
+        <thingClass>Apparel</thingClass>
+        
+        <!-- 物品分类：可拾取物品 -->
+        <category>Item</category>
+        
+        <!-- 高度层：物品层 -->
+        <altitudeLayer>Item</altitudeLayer>
+        
+        <!-- 是否可被选中 -->
+        <selectable>true</selectable>
+        
+        <!-- 是否总是可搬运 -->
+        <alwaysHaulable>true</alwaysHaulable>
+        
+        <!-- 绘制类型：仅地图网格 -->
+        <drawerType>MapMeshOnly</drawerType>
+        
+        <!-- 是否可旋转 -->
+        <rotatable>false</rotatable>
+        
+        <!-- 是否有生命值 -->
+        <useHitPoints>true</useHitPoints>
+        
+        <!-- 堆叠限制：1（唯一物品） -->
+        <stackLimit>1</stackLimit>
+        
+        <!-- 科技等级：灵能科技 -->
+        <techLevel>Archotech</techLevel>
+        
+        <!-- ========== 图形设置 ========== -->
+        
+        <graphicData>
+            <!-- 贴图路径：从Textures/文件夹开始，不含后缀 -->
+            <texPath>Things/Item/OneRing</texPath>
+            
+            <!-- 图形类：单张贴图 -->
+            <graphicClass>Graphic_Single</graphicClass>
+            
+            <!-- 绘制大小：Vector2格式 (宽度, 高度) -->
+            <drawSize>(0.5, 0.5)</drawSize>
+            
+            <!-- 在地面上的随机旋转角度 -->
+            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+        </graphicData>
+        
+        <!-- ========== GUI显示设置 ========== -->
+        
+        <!-- 是否显示GUI覆盖层 -->
+        <drawGUIOverlay>true</drawGUIOverlay>
+        
+        <!-- 关键设置：不显示品质覆盖层 -->
+        <drawGUIOverlayQuality>false</drawGUIOverlayQuality>
+        
+        <!-- ========== 属性基础值 ========== -->
+        
+        <statBases>
+            <!-- 最大生命值 -->
+            <MaxHitPoints>5000</MaxHitPoints>
+            
+            <!-- 市场价值 -->
+            <MarketValue>10000</MarketValue>
+            
+            <!-- 易燃性 -->
+            <Flammability>0</Flammability>
+            
+            <!-- 美观度 -->
+            <Beauty>350</Beauty>
+            
+            <!-- 质量（重量） -->
+            <Mass>0.1</Mass>
+            
+            <!-- 装备延迟 -->
+            <EquipDelay>1</EquipDelay>
+            
+            <!-- 劣化率：0表示不会劣化 -->
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        
+        <!-- ========== 交易和生成设置 ========== -->
+        
+        <!-- 不可交易 -->
+        <tradeability>Sellable</tradeability>
+        
+        <!-- 物品生成标签：仅作为标准奖励 -->
+        <thingSetMakerTags>
+            <li>RewardStandardOnly</li> 
+        </thingSetMakerTags>
+        
+        <!-- ========== 制作成本 ========== -->
+        
+        <costList>
+            <!-- 需要50黄金 -->
+            <Gold>50</Gold>
+        </costList>
+        
+        <!-- ========== 服装特定属性 ========== -->
+        
+        <apparel>
+            <!-- 穿戴部位：中指 -->
+            <bodyPartGroups>
+                <li>MiddleFingers</li>
+            </bodyPartGroups>
+            
+            <!-- 穿戴层：皮肤上 -->
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            
+            <!-- 提供的技能 -->
+            <abilities>
+                <li>OneRingInvisibility</li>
+                <li>OneRingBlindingPulse</li>
+            </abilities>
+        </apparel>
+        
+        <!-- ========== 组件列表 ========== -->
+        <!-- 注意：不包含CompQuality组件，因此不会显示品质后缀 -->
+        <!-- 不包含CompColorable组件，因为戒指不需要染色 -->
+        
+        <comps>
+            <!-- 禁止使用组件：可标记为禁止使用 -->
+            <li Class="CompProperties_Forbiddable"/>
+            
+            <!-- 魔戒自定义组件：处理装备/卸下逻辑 -->
+            <li Class="Touzi.TheOneRing.CompProperties_OneRing"/>
+        </comps>
+        
+    </ThingDef>
+</Defs>

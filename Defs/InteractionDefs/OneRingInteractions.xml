@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 1. 讨论魔戒 -->
+  <InteractionDef>
+    <defName>OneRingChat</defName>
+    <label>讨论至尊魔戒</label>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] 和 [RECIPIENT_nameDef] 讨论了至尊魔戒的力量。</li>
+        <li>r_logentry->[INITIATOR_nameDef] 询问 [RECIPIENT_nameDef] 关于魔戒的事情。</li>
+        <li>r_logentry->[RECIPIENT_nameDef] 向 [INITIATOR_nameDef] 讲述了魔戒的传说。</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <initiatorThought>OneRingChatInitiator</initiatorThought>
+    <recipientThought>OneRingChatRecipient</recipientThought>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <workerClass>Touzi.TheOneRing.InteractionWorker_OneRingChat</workerClass>
+  </InteractionDef>
+
+  <!-- 2. 敬畏魔戒 -->
+  <InteractionDef>
+    <defName>OneRingAwe</defName>
+    <label>敬畏至尊魔戒</label>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] 对 [RECIPIENT_nameDef] 手中的魔戒感到敬畏。</li>
+        <li>r_logentry->[INITIATOR_nameDef] 惊叹于至尊魔戒的美丽与力量。</li>
+        <li>r_logentry->[RECIPIENT_nameDef] 向 [INITIATOR_nameDef] 展示魔戒的威严。</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <initiatorThought>OneRingAweInitiator</initiatorThought>
+    <recipientThought>OneRingAweRecipient</recipientThought>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <workerClass>Touzi.TheOneRing.InteractionWorker_OneRingAwe</workerClass>
+  </InteractionDef>
+
+  <!-- 3. 嫉妒魔戒 -->
+  <InteractionDef>
+    <defName>OneRingJealousy</defName>
+    <label>嫉妒至尊魔戒</label>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] 嫉妒地看向 [RECIPIENT_nameDef] 手中的魔戒。</li>
+        <li>r_logentry->[INITIATOR_nameDef] 凭什么 [RECIPIENT_nameDef] 能拥有这样的力量？</li>
+        <li>r_logentry->[RECIPIENT_nameDef] 注意到 [INITIATOR_nameDef] 眼中的贪婪。</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <initiatorThought>OneRingJealousyInitiator</initiatorThought>
+    <recipientThought>OneRingJealousyRecipient</recipientThought>
+    <symbol>Things/Mote/SpeechSymbols/Insult</symbol>
+    <workerClass>Touzi.TheOneRing.InteractionWorker_OneRingJealousy</workerClass>
+  </InteractionDef>
+
+  <!-- 4. 恐惧魔戒 -->
+  <InteractionDef>
+    <defName>OneRingFear</defName>
+    <label>恐惧至尊魔戒</label>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] 害怕地看着 [RECIPIENT_nameDef] 手中的魔戒。</li>
+        <li>r_logentry->[INITIATOR_nameDef] 感到一股寒意，那魔戒太过邪恶。</li>
+        <li>r_logentry->[RECIPIENT_nameDef] 展示着魔戒的黑暗力量，让 [INITIATOR_nameDef] 不寒而栗。</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <initiatorThought>OneRingFearInitiator</initiatorThought>
+    <recipientThought>OneRingFearRecipient</recipientThought>
+    <symbol>Things/Mote/SpeechSymbols/Insult</symbol>
+    <workerClass>Touzi.TheOneRing.InteractionWorker_OneRingFear</workerClass>
+  </InteractionDef>
+
+  <!-- 5. 渴望魔戒 -->
+  <InteractionDef>
+    <defName>OneRingDesire</defName>
+    <label>渴望至尊魔戒</label>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] 渴望地看向 [RECIPIENT_nameDef] 手中的魔戒。</li>
+        <li>r_logentry->[INITIATOR_nameDef] 心想若是自己也能拥有那样的力量该多好。</li>
+        <li>r_logentry->[INITIATOR_nameDef] 不由得对 [RECIPIENT_nameDef] 的魔戒心生向往。</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <initiatorThought>OneRingDesireInitiator</initiatorThought>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <workerClass>Touzi.TheOneRing.InteractionWorker_OneRingDesire</workerClass>
+  </InteractionDef>
+</Defs>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Touzi.TheOneRing</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4518" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.6" ExcludeAssets="runtime" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Include="Source\CompOneRing.cs" />
+    <Compile Include="Source\HarmonyPatches.cs" />
+    <Compile Include="Source\InteractionWorker_OneRingChat.cs" />
+    <Compile Include="Source\OneRingInteractionHelper.cs" />
+    <Compile Include="Source\InteractionWorker_OneRingVariants.cs" />
+    <Compile Include="Source\IncidentWorker_OneRingWhisper.cs" />
+    <Compile Include="Source\QuestNode_Root_OneRingRuins.cs" />
+  </ItemGroup>
+</Project>

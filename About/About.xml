@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>Touzi.TheOneRingOfRimworld</packageId>
+	<name>The One Ring of Rimworld</name>
+	<author>Touzi</author>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>RimWorld Royalty</displayName>
+		</li>
+	</modDependencies>
+	<description>
+末代黑暗之主索伦锻造了至尊魔戒，那是九戒之首，蕴含统御一切的力量与意志。如今，这枚统御之戒跨越星海，出现在你的世界...
+
+在游戏中加入了至尊魔戒这一物品，普通殖民者在佩戴戒指时会获得启灵神经。
+为戒指加入了隐身和致盲脉冲两个技能。
+作为代价，佩戴者会逐渐被戒指的力量腐蚀，产生一系列负面情绪和成瘾症状，尤其注意戒指被移除后会产生强烈的戒断反应。
+同时，其他人也会对佩戴者产生不同的看法，有些人会敬畏佩戴者的力量，而有些人则会感到恐惧和嫉妒。魔戒的存在将会彻底搅动整个殖民地的人际关系。
+加入了新的随机事件，魔戒在没有佩戴者时可能会诱惑周围的空闲殖民者。
+
+魔戒在mod专属的遗迹狩猎任务中作为奖励出现。
+</description>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+</ModMetaData>

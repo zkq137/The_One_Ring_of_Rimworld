@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Stage 1: 新用户 -->
+	<HediffDef>
+		<defName>OneRingStage1_New</defName>
+		<initialSeverity>0.001</initialSeverity>
+		<label>至尊之戒</label>
+		<description>至尊魔戒的力量还未完全显现。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<defaultLabelColor>(0.3, 0.8, 0.3)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>0</SocialImpact>
+					<PsychicSensitivityOffset>0.5</PsychicSensitivityOffset>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+		
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.033</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>OneRingStage2</hediff>
+					</li>
+				</hediffs>
+			</li>
+			<li Class="HediffCompProperties_ThoughtSetter">
+				<thought>OneRingStage1</thought>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- Stage 2: -->
+	<HediffDef>
+		<defName>OneRingStage2</defName>
+		<initialSeverity>0.001</initialSeverity>
+		<label>至尊之戒（腐蚀）</label>
+		<description>戒指开始腐蚀你的心智。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.8, 0.6, 0.2)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>-0.3</SocialImpact>
+					<PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
+				</statOffsets>
+			</li>
+		</stages>
+		
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.066</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>OneRingStage3</hediff>
+					</li>
+				</hediffs>
+			</li>
+			<li Class="HediffCompProperties_ThoughtSetter">
+				<thought>OneRingStage2</thought>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- Stage 3: -->
+	<HediffDef>
+		<defName>OneRingStage3</defName>
+		<initialSeverity>0.001</initialSeverity>
+		<label>至尊之戒（沉沦）</label>
+		<description>你已经离不开它了。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.8, 0.3, 0.2)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>-0.4</SocialImpact>
+					<PsychicSensitivityOffset>0.1</PsychicSensitivityOffset>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.066</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>OneRingStage4</hediff>
+					</li>
+				</hediffs>
+			</li>
+			<li Class="HediffCompProperties_ThoughtSetter">
+				<thought>OneRingStage3</thought>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- Stage 4: 永久 -->
+	<HediffDef>
+		<defName>OneRingStage4</defName>
+		<label>至尊之戒（堕落）</label>
+		<description>你已经成为了戒指的奴隶。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.8, 0.1, 0.1)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>-0.6</SocialImpact>
+					<PsychicSensitivityOffset>-0.2</PsychicSensitivityOffset>
+					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		
+		<comps>
+			<li Class="HediffCompProperties_ThoughtSetter">
+				<thought>OneRingStage4</thought>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- 戒断反应: 7天 -->
+	<HediffDef>
+		<defName>OneRingWithdrawal</defName>
+		<label>魔戒戒断反应</label>
+		<description>失去至尊魔戒后产生的剧烈痛苦。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<statOffsets>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<painOffset>0.3</painOffset>
+			</li>
+		</stages>
+		
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>420000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_ThoughtSetter">
+				<thought>OneRingWithdrawalThought</thought>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- 标记: 曾经崩溃过 -->
+	<HediffDef>
+		<defName>OneRingBerserked</defName>
+		<label>戒指崩溃历史</label>
+		<description>此人曾经因为尝试摘下至尊魔戒而陷入疯狂。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.5, 0.5, 0.5)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<label>崩溃历史</label>
+			</li>
+		</stages>
+		
+		<comps>
+			<li Class="Touzi.TheOneRing.CompProperties_OneRing_BerserkedStage"/>
+		</comps>
+	</HediffDef>
+	
+	<!-- 延迟执行任务 -->
+	<HediffDef>
+		<defName>OneRingDelayedAction</defName>
+		<label>戒指延迟动作</label>
+		<description>内部使用的延迟执行机制</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<defaultLabelColor>(0.5, 0.5, 0.5)</defaultLabelColor>
+		<stages>
+			<li/>
+		</stages>
+		<comps>
+			<li Class="Touzi.TheOneRing.CompProperties_OneRing_DelayedAction"/>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>20</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

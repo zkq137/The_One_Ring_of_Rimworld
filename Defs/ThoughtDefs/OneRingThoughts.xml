@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Stage 1: +30 -->
+	<ThoughtDef>
+		<defName>OneRingStage1</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>30</durationDays>
+		<stages>
+			<li>
+				<label>这是我的！</label>
+				<description>这枚戒指是我的！没有人可以把它从我身边夺走！</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Stage 2: -5, 关系-5 -->
+	<ThoughtDef>
+		<defName>OneRingStage2</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>15</durationDays>
+		<stages>
+			<li>
+				<label>这是我的宝贝</label>
+				<description>这枚戒指是我的宝贝！其他人都在觊觎它！</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Stage 3: -15, 关系-20 -->
+	<ThoughtDef>
+		<defName>OneRingStage3</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>15</durationDays>
+		<stages>
+			<li>
+				<label>我只有你了</label>
+				<description>其他人都不理解我...只有这枚戒指永远陪伴着我...</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Stage 4: -25, 关系-30 -->
+	<ThoughtDef>
+		<defName>OneRingStage4</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>-1</durationDays>
+		<stages>
+			<li>
+				<label>咕噜...咕噜...</label>
+				<description>我的宝贝...我的 precious...</description>
+				<baseMoodEffect>-25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- 戒断反应: -50 -->
+	<ThoughtDef>
+		<defName>OneRingWithdrawalThought</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>失去宝贝的痛苦</label>
+				<description>没有戒指的日子简直无法忍受...所有人都在针对我，他们都想得到它！</description>
+				<baseMoodEffect>-50</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 讨论魔戒 - 发起者 -->
+	<ThoughtDef>
+		<defName>OneRingChatInitiator</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>讨论了至尊魔戒</label>
+				<description>与别人讨论了至尊魔戒的力量和传说。</description>
+				<baseOpinionOffset>2</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 讨论魔戒 - 接收者 -->
+	<ThoughtDef>
+		<defName>OneRingChatRecipient</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>被询问魔戒的事情</label>
+				<description>有人询问了我关于至尊魔戒的事情。</description>
+				<baseOpinionOffset>2</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 敬畏 - 发起者 -->
+	<ThoughtDef>
+		<defName>OneRingAweInitiator</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>对至尊魔戒感到敬畏</label>
+				<description>魔戒展示的力量令人敬畏。</description>
+				<baseOpinionOffset>5</baseOpinionOffset>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 敬畏 - 接收者 -->
+	<ThoughtDef>
+		<defName>OneRingAweRecipient</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>展示魔戒的力量</label>
+				<description>向别人展示了魔戒的威严。</description>
+				<baseOpinionOffset>8</baseOpinionOffset>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 嫉妒 - 发起者 -->
+	<ThoughtDef>
+		<defName>OneRingJealousyInitiator</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>3</durationDays>
+		<stages>
+			<li>
+				<label>嫉妒魔戒的力量</label>
+				<description>魔戒在呼唤我，我才是它的主人，凭什么别人能拥有这样的力量？</description>
+				<baseOpinionOffset>-8</baseOpinionOffset>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 嫉妒 - 接收者 -->
+	<ThoughtDef>
+		<defName>OneRingJealousyRecipient</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>3</durationDays>
+		<stages>
+			<li>
+				<label>被嫉妒的感觉</label>
+				<description>有人想占有我的宝贝，谁也别想抢走它！魔戒的主人只能是我！</description>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 恐惧 - 发起者 -->
+	<ThoughtDef>
+		<defName>OneRingFearInitiator</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>恐惧至尊魔戒的伟力</label>
+				<description>那枚戒指散发着邪恶的气息。</description>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 恐惧 - 接收者 -->
+	<ThoughtDef>
+		<defName>OneRingFearRecipient</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>被恐惧的力量感</label>
+				<description>其他人害怕我的力量，这让我感到满足。</description>
+				<baseOpinionOffset>5</baseOpinionOffset>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- 渴望 - 发起者 -->
+	<ThoughtDef>
+		<defName>OneRingDesireInitiator</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>想要拥有至尊魔戒</label>
+				<description>那枚漂亮的戒指在向我低语，真是令人向往。</description>
+				<baseOpinionOffset>-2</baseOpinionOffset>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

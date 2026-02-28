@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef ParentName="PsycastBase">
+    <defName>OneRingInvisibility</defName>
+    <label>隐身</label>
+    <description>激活至尊魔戒的隐身力量，在一段时间内完全隐形。</description>
+    <abilityClass>Psycast</abilityClass>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <category>Psychic</category>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicInvisibility</hediffDef>
+        <psychic>True</psychic>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+    <iconPath>UI/Abilities/Invisibility</iconPath>
+    <level>0</level>
+    <statBases>
+      <Ability_Duration>60</Ability_Duration>
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+    </statBases>
+    <cooldownTicksRange>7200</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastPsycast</verbClass>
+      <range>19.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetAnimals>True</canTargetAnimals>
+        <thingCategory>Item</thingCategory>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+      <onlyManualCast>True</onlyManualCast>
+    </verbProperties>
+    <warmupSound>PsycastCastLoop</warmupSound>
+    <writeCombatLog>True</writeCombatLog>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>OneRingBlindingPulse</defName>
+    <label>致盲脉冲</label>
+    <description>释放至尊魔戒的力量，干扰周围所有生物的视觉中枢，使敌人失明一段时间。</description>
+    <abilityClass>Psycast</abilityClass>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <category>Psychic</category>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicBlindness</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <psychic>True</psychic>
+        <goodwillImpact>-15</goodwillImpact>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+    <iconPath>UI/Abilities/BlindingPulse</iconPath>
+    <level>0</level>
+    <statBases>
+      <Ability_Duration>30</Ability_Duration>
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+      <Ability_EffectRadius>3.9</Ability_EffectRadius>
+    </statBases>
+    <cooldownTicksRange>3600</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastPsycast</verbClass>
+      <range>24.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetAnimals>True</canTargetAnimals>
+        <thingCategory>Item</thingCategory>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <warmupSound>PsycastCastLoop</warmupSound>
+    <writeCombatLog>True</writeCombatLog>
+  </AbilityDef>
+</Defs>

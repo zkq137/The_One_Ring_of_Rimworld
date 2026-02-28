@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\bin\Debug\Touzi.TheOneRing.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\bin\Debug\Touzi.TheOneRing.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\obj\Debug\TheOneRing.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\obj\Debug\TheOneRing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\obj\Debug\TheOneRing.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\obj\Debug\TheOneRing.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\obj\Debug\TheOneRing.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\obj\Debug\Touzi.TheOneRing.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The_One_Ring_of_Rimworld\obj\Debug\Touzi.TheOneRing.pdb
